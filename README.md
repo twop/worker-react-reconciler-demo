@@ -3,11 +3,11 @@
 This is a technical demo of familiar react development workflow for UI but done in a Web Worker, which is achieved by implementing a custom react-reconciler.
 
 ## Why
-Plugin UI
-In apps like Figma, MS Teams and slack there is a desire to have plugins that can contribute to the app UI. Example: 
+### UI contributed by plugins
+In apps like Figma, MS Teams and Slack there is a desire to have a plugin system that can contribute UI to the app. Example: 
 ![Screen shot of Zoom card in Slack](./images/slack+zoom.png?raw=true "Zoom card in Slack")
 
-Historically these use-cases are solved with iframes, but recently more and more technologies emerge for "safe" embedding with minimal overhead. One of my favorite projects in that space is [Adaptive Cards](https://adaptivecards.io/) done by microsoft.
+Historically these use-cases are solved with iframes, but recently more and more technologies emerge that focus on "safe" embedding with minimal overhead. One of my favorite projects in that space is [Adaptive Cards](https://adaptivecards.io/) done by microsoft.
 
 But how to make this UI:
 - Interactive: you can press a button or change the content over time
