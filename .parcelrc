@@ -1,0 +1,61 @@
+{
+  "bundler": "@parcel/bundler-default",
+  "transformers": {
+    "types:*.{ts,tsx}": ["@parcel/transformer-typescript-types"],
+    "bundle-text:*": ["@parcel/transformer-inline-string", "..."],
+    "data-url:*": ["@parcel/transformer-inline-string", "..."],
+    "*.{js,mjs,jsm,jsx,es6,cjs,ts,tsx}": [
+      "@parcel/transformer-babel",
+      "@parcel/transformer-js"
+    ],
+    "*.{json,json5}": ["@parcel/transformer-json"],
+    "*.jsonld": ["@parcel/transformer-jsonld"],
+    "*.toml": ["@parcel/transformer-toml"],
+    "*.yaml": ["@parcel/transformer-yaml"],
+    "*.{gql,graphql}": ["@parcel/transformer-graphql"],
+    "*.{styl,stylus}": ["@parcel/transformer-stylus"],
+    "*.{sass,scss}": ["@parcel/transformer-sass"],
+    "*.less": ["@parcel/transformer-less"],
+    "*.{css,pcss}": ["@parcel/transformer-postcss", "@parcel/transformer-css"],
+    "*.sss": ["@parcel/transformer-sugarss"],
+    "*.{htm,html}": [
+      "@parcel/transformer-posthtml",
+      "@parcel/transformer-html"
+    ],
+    "*.pug": ["@parcel/transformer-pug"],
+    "*.coffee": ["@parcel/transformer-coffeescript"],
+    "*.mdx": ["@parcel/transformer-mdx"],
+    "url:*": ["@parcel/transformer-raw"]
+  },
+  "namers": ["@parcel/namer-default"],
+  "runtimes": {
+    "browser": [
+      "@parcel/runtime-js"
+
+    ],
+    "service-worker": ["@parcel/runtime-js"],
+    "web-worker": ["@parcel/runtime-js"],
+    "node": ["@parcel/runtime-js"]
+  },
+  "optimizers": {
+    "data-url:*": ["...", "@parcel/optimizer-data-url"],
+    "*.css": ["@parcel/optimizer-cssnano"],
+    "*.js": ["@parcel/optimizer-terser"],
+    "*.html": ["@parcel/optimizer-htmlnano"]
+  },
+  "packagers": {
+    "*.html": "@parcel/packager-html",
+    "*.css": "@parcel/packager-css",
+    "*.js": "@parcel/packager-js",
+    "*.ts": "@parcel/packager-ts",
+    "*.jsonld": "@parcel/packager-raw-url",
+    "*": "@parcel/packager-raw"
+  },
+  "resolvers": ["@parcel/resolver-default"],
+  "reporters": [
+    "@parcel/reporter-cli",
+    "@parcel/reporter-dev-server",
+    "@parcel/reporter-bundle-analyzer",
+    "@parcel/reporter-bundle-buddy"
+  ]
+}

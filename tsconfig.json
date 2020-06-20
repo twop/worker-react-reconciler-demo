@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2019",
+    "module": "ESNext",
+    "removeComments": false,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "lib": ["webworker", "es2020", "DOM"],
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "."
+  }
+}

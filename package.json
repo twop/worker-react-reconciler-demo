@@ -1,0 +1,25 @@
+{
+  "name": "worker-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel serve index.html",
+    "test": "test",
+    "serve": "servor ./dist"
+  },
+  "author": "Simon",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
+    "servor": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-reconciler": "^0.25.1"
+  }
+}
