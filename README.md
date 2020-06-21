@@ -72,10 +72,10 @@ I think there is a power of having a familiar UI authoring experience but tailor
 
 Benefits:
 - Familiar experience of authoring UI
-- Can be made interactive (it is up to you whether or not support any interactive elements)
+- Can be made interactive (it is up to you whether or not support any interactive elements like buttons)
 - Plugin can update it's UI by simply using `useState` & `useEffect`
 - Safe: there is no 3rd party code that executes in the main thread
 - Fast: all virtual dom diffing is done by a worker thread, so main thread is free from heavy lifting
 - It is up to you to either expose low level primitives such as `div` or only specific high level controls like `Tabs`. This architecture can accommodate both approaches
 
-Note that you just can expose primitives from you design systems. In this case all styling, layout, accessibility, theming will "just work".
+Note that you can expose primitives from you design systems. In this case all styling, layout, accessibility, theming will "just work".
