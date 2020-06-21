@@ -14,7 +14,7 @@ But how to make this UI:
 - Safe: don't run 3rd party (potentially unsafe) code in the same environment as the main app, which can compromise customer data or just have a buggy JS polyfill. Figma published an amazing [blog post](https://www.figma.com/blog/an-update-on-plugin-security/) about this problem. 
 - Fast: regardless of 3rd party code your main app should feel smooth and responsive no matter what. Solutions like embedding `iframe` might not be the best for performance. Note that Safe & Fast is often achieved by outsourcing the compute to a separate sandboxed thread or even run it on a server.
 
-But I think we can generally do better than iframe and [adaptive cards](https://adaptivecards.io/).
+I think we can do better than iframe and [adaptive cards](https://adaptivecards.io/).
 
 ## Idea
 "What if we can author adaptive cards like UI but in react using `useState` & `useEffect` for interactivity in a Worker (safety + non blocking main thread)"
